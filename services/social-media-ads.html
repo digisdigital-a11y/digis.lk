@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Ads Services | Digis Marketing</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/gallery-loader.js" defer></script>
+
+  <style>
+    .service-header { padding: 150px 0 80px; text-align: center; background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.9)), url('../img/hero_digital.png'); background-size: cover; background-position: center; }
+    .work-gallery { padding: 80px 0; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+    .gallery-item { border-radius: 20px; overflow: hidden; border: 1px solid var(--border); background: var(--dark-lighter); transition: all 0.3s; }
+    .gallery-item:hover { transform: translateY(-10px); border-color: var(--primary); }
+    .gallery-item img { width: 100%; height: 250px; object-fit: cover; }
+    .gallery-info { padding: 1.5rem; }
+    .back-nav { position: absolute; top: 40px; left: 40px; z-index: 1001; }
+    .back-btn { color: #fff; text-decoration: none; display: flex; align-items: center; gap: 10px; font-weight: 600; background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; backdrop-filter: blur(10px); transition: 0.3s; }
+    .back-btn:hover { background: var(--primary); }
+  </style>
+</head>
+<body>
+  <div class="back-nav">
+    <a href="../index.html#services" class="back-btn"><i class="fas fa-arrow-left"></i> ආපසු යන්න</a>
+  </div>
+
+  <header class="service-header">
+    <div class="container" data-aos="fade-up">
+      <h1 class="gradient-text" style="font-size: 3.5rem;">Social Media Ads</h1>
+      <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 20px auto;">Facebook, Instagram සහ TikTok හරහා ඔබේ ව්‍යාපාරය ලක්ෂ ගණනක් අතරට ගෙන ගොස් අලෙවිය වැඩි කර ගැනීමට අප සහාය වෙනවා.</p>
+    </div>
+  </header>
+
+  <section class="work-gallery">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">අපි කරපු <span class="gradient-text">Ads Campaign</span></h2>
+      <div class="gallery-grid" id="gallery-container">
+        <div class="gallery-item" data-aos="zoom-in">
+          <img src="../img/victoria.jpg" alt="Facebook Ad Sample">
+          <div class="gallery-info">
+            <h3>Fashion Store Ads</h3>
+            <p>Facebook සහ Instagram හරහා ඇඳුම් විලාසිතා අලෙවිය වැඩි කිරීමේ ප්‍රචාරණයක්.</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="../img/verona.jpg" alt="Instagram Ad Sample">
+          <div class="gallery-info">
+            <h3>Product Launch Ads</h3>
+            <p>අලුත් නිෂ්පාදනයක් වෙළඳපොළට හඳුන්වා දීමේ සාර්ථක ඇඩ් කැම්පේන් එකක්.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" style="background: var(--dark-lighter); border-radius: 0; padding: 100px 0;">
+    <div class="container text-center">
+      <h2 style="font-size: 2.5rem; margin-bottom: 30px;">ඔයාගේ Ads <span class="gradient-text">අපිට බාර දෙන්න.</span></h2>
+      <p style="color: var(--text-secondary); margin-bottom: 40px;">අඩු වියදමකින් වැඩිම ප්‍රතිඵල ලබාගන්න දැන්ම එක්වන්න.</p>
+      <a href="https://wa.me/393793066450?text=I%20want%20to%20start%20ads" class="btn btn-whatsapp" style="padding: 1.2rem 3rem;"><i class="fab fa-whatsapp"></i> දැන්ම කතා කරමු</a>
+    </div>
+  </section>
+
+  <footer style="padding: 40px 0; border-top: 1px solid var(--border);">
+    <div class="container text-center">
+      <p>&copy; 2024 Digis Marketing. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    document.addEventListener('DOMContentLoaded', () => {
+      loadGalleryData('Social Media Ads', 'gallery-container');
+    });
+  </script>
+</body>
+</html>

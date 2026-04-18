@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Optimization Services | Digis Marketing</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/gallery-loader.js" defer></script>
+
+  <style>
+    .service-header { padding: 150px 0 80px; text-align: center; background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.9)), url('../img/hero_digital.png'); background-size: cover; background-position: center; }
+    .work-gallery { padding: 80px 0; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+    .gallery-item { border-radius: 20px; overflow: hidden; border: 1px solid var(--border); background: var(--dark-lighter); transition: all 0.3s; }
+    .gallery-item:hover { transform: translateY(-10px); border-color: var(--primary); }
+    .gallery-item img { width: 100%; height: 250px; object-fit: cover; }
+    .gallery-info { padding: 1.5rem; }
+    .back-nav { position: absolute; top: 40px; left: 40px; z-index: 1001; }
+    .back-btn { color: #fff; text-decoration: none; display: flex; align-items: center; gap: 10px; font-weight: 600; background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 50px; backdrop-filter: blur(10px); transition: 0.3s; }
+    .back-btn:hover { background: var(--primary); }
+  </style>
+</head>
+<body>
+  <div class="back-nav">
+    <a href="../index.html#services" class="back-btn"><i class="fas fa-arrow-left"></i> ආපසු යන්න</a>
+  </div>
+
+  <header class="service-header">
+    <div class="container" data-aos="fade-up">
+      <h1 class="gradient-text" style="font-size: 3.5rem;">SEO Optimization</h1>
+      <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; margin: 20px auto;">ගූගල් (Google) සෙවුම් ප්‍රතිඵල අතර ඔබේ වෙබ් අඩවිය ඉදිරියටම ගෙන ඒම මඟින් වැඩි පාරිභෝගික ආකර්ෂණයක් ලබා දීමට අපි කටයුතු කරනවා.</p>
+    </div>
+  </header>
+
+  <section class="work-gallery">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">අපි ලබා දුන් <span class="gradient-text">ප්‍රතිඵල</span></h2>
+      <div class="gallery-grid" id="gallery-container">
+        <div class="gallery-item" data-aos="zoom-in">
+          <img src="../img/hero_digital.png" alt="SEO Results Sample">
+          <div class="gallery-info">
+            <h3>Keyword Ranking</h3>
+            <p>ප්‍රධාන වචන (Keywords) සඳහා ගූගල් පළමු පිටුවේ ස්ථානය ලබා ගැනීම.</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="../img/verona.jpg" alt="SEO Analytics Sample">
+          <div class="gallery-info">
+            <h3>Traffic Growth</h3>
+            <p>පැමිණෙන ගනුදෙනුකරුවන්ගේ ප්‍රමාණය මාසිකව වැඩි කිරීමේ සාර්ථක ප්‍රතිඵල.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" style="background: var(--dark-lighter); border-radius: 0; padding: 100px 0;">
+    <div class="container text-center">
+      <h2 style="font-size: 2.5rem; margin-bottom: 30px;">ගූගල් සර්ච් වල <span class="gradient-text">උඩටම යන්න.</span></h2>
+      <p style="color: var(--text-secondary); margin-bottom: 40px;">ඔබේ වෙබ් අඩවිය සැඟවී තිබෙන්නට ඉඩ නොදෙන්න. අදම SEO පටන් ගන්න.</p>
+      <a href="https://wa.me/393793066450?text=I%20want%20to%20optimize%20my%20website%20SEO" class="btn btn-whatsapp" style="padding: 1.2rem 3rem;"><i class="fab fa-whatsapp"></i> දැන්ම කතා කරමු</a>
+    </div>
+  </section>
+
+  <footer style="padding: 40px 0; border-top: 1px solid var(--border);">
+    <div class="container text-center">
+      <p>&copy; 2024 Digis Marketing. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    document.addEventListener('DOMContentLoaded', () => {
+      loadGalleryData('SEO Optimization', 'gallery-container');
+    });
+  </script>
+</body>
+</html>

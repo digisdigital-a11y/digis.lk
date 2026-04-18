@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digis Marketing | Digital Marketing Agency in Sri Lanka</title>
+  
+  <meta name="description" content="Digis Marketing provides professional social media marketing, Facebook ads, SEO, and website design services in Sri Lanka. Boost your business with expert digital strategies.">
+  <meta name="keywords" content="Digis Marketing, Digital Marketing Sri Lanka, Social Media Marketing Sri Lanka, Facebook Ads Sri Lanka, SEO Sri Lanka, Website Design Sri Lanka, Graphic Design Sri Lanka, Sinhala Digital Marketing, Marketing Ads Sri Lanka">
+  <meta name="author" content="Digis Marketing (Pvt) Ltd">
+  <link rel="canonical" href="https://digismarketing.lk/">
+  
+  <!-- Icons & Fonts Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;700&display=swap">
+  
+  <!-- Critical Style to fix CLS and FCP -->
+  <style>
+    :root { --primary: #C0192D; --dark: #050505; --dark-lighter: #0f0f0f; --text: #ffffff; --text-secondary: #aaaaaa; --border: rgba(255,255,255,0.08); }
+    body { background: var(--dark); color: var(--text); margin: 0; font-family: 'Outfit', sans-serif; line-height: 1.8; overflow-x: hidden; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    #loader { position: fixed; inset: 0; background: #0a0a0a; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: opacity 0.5s; }
+    nav { height: 90px; position: fixed; top: 0; width: 100%; z-index: 1000; transition: 0.4s; display: flex; align-items: center; background: rgba(5,5,5,0.01); }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+    .hero { min-height: 100vh; display: flex; align-items: center; position: relative; padding: 120px 0 60px; overflow: hidden; background: var(--dark); }
+    .logo { height: 50px; width: 180px; object-fit: contain; display: block; }
+    .glow-orb { position: absolute; border-radius: 50%; filter: blur(100px); z-index: -1; opacity: 0.15; }
+    .gradient-text { background: linear-gradient(90deg, #fff, #C0192D); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; z-index: 1001; width: 65px; height: 65px; background: #25D366; border-radius: 50%; }
+  </style>
+
+  <!-- High-Priority Preloads -->
+  <link rel="preload" href="img/logo.png" as="image" fetchpriority="high">
+  
+  <!-- Modern CSS Loading -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+</head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Preloader -->
+  <div id="loader"><div class="loader-pulse"></div></div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/94762167260" target="_blank" class="whatsapp-btn" title="Chat with us">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="/"><img src="img/logo.png" alt="Digis Marketing Logo" width="180" height="50" fetchpriority="high" class="logo" style="width: auto; height: 50px; object-fit: contain;"></a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Our Work</a>
+        <a href="#active">Active Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/94762167260" class="nav-cta">Call Now</a>
+      </div>
+      <div class="mobile-toggle d-none"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="glow-orb" style="top: 10%; right: 10%; width: 500px; height: 500px; background: #C0192D;"></div>
+    <div class="glow-orb" style="bottom: 10%; left: 10%; width: 400px; height: 400px; background: #400000;"></div>
+    
+    <div class="container hero-grid">
+      <div class="hero-content" data-aos="fade-up">
+        <span class="badge" style="display:inline-block; padding: 5px 15px; border: 1px solid var(--primary); border-radius: 20px; font-size: 0.8rem; margin-bottom: 1rem; color: var(--primary);">🚀 Leading Digital Agency Italy</span>
+        <h1 class="gradient-text">අපි ඔයාගේ බිස්නස් එක ඩිජිටල් විදිහට <span style="color:#fff">දියුණු කරලා දෙනවා.</span></h1>
+        <p>දිනෙන් දින දියුණු වන ලෝකයේ ඔයාගේ ව්‍යාපාරය අංක එකට ගේන්න අපිට පුළුවන්. Digital Marketing, SEO, සහ Branding හරහා ඉහළම ප්‍රතිඵල ලබාගන්න.</p>
+        <div class="cta-group">
+          <a href="https://wa.me/94762167260" class="btn btn-whatsapp" aria-label="Send WhatsApp Message"><i class="fab fa-whatsapp"></i> අපිට මැසේජ් එකක් දාන්න</a>
+          <a href="tel:+393793066450" class="btn btn-call" aria-label="Call Digis Marketing"><i class="fas fa-phone-alt"></i> Call එකක් දෙන්න</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" style="padding-bottom: 20px;">
+    <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-up">අපි කරන <span class="gradient-text">සේවාවන් (Our Services)</span></h2>
+      <div class="blog-grid" style="margin-top: 2rem;">
+        <a href="https://wa.me/94762167260?text=I%20am%20interested%20in%20Website%20Design" target="_blank" class="blog-card" data-aos="zoom-in" style="text-decoration:none; display:block;">
+          <i class="fas fa-laptop-code fa-3x" style="color:var(--primary); margin-bottom: 1.5rem;"></i>
+          <h3>Website Design</h3>
+          <p>ඔයාගේ ව්‍යාපාරයට ගැළපෙන ආකර්ෂණීය සහ වේගවත් වෙබ් අඩවි නිර්මාණය.</p>
+        </a>
+        <a href="https://wa.me/94762167260?text=I%20am%20interested%20in%20Social%20Media%20Ads" target="_blank" class="blog-card" data-aos="zoom-in" data-aos-delay="100" style="text-decoration:none; display:block;">
+          <i class="fab fa-facebook-square fa-3x" style="color:#1877F2; margin-bottom: 1.5rem;"></i>
+          <h3>Social Media Ads</h3>
+          <p>Facebook, Instagram සහ TikTok හරහා ඔයාගේ බිස්නස් එක ලක්ෂ ගණනක් අතරට.</p>
+        </a>
+        <a href="https://wa.me/94762167260?text=I%20am%20interested%20in%20Graphic%20Design" target="_blank" class="blog-card" data-aos="zoom-in" data-aos-delay="200" style="text-decoration:none; display:block;">
+          <i class="fas fa-palette fa-3x" style="color:#FFD700; margin-bottom: 1.5rem;"></i>
+          <h3>Graphic Design</h3>
+          <p>ලෝගෝ, බ්‍රොෂර් සහ ඕනෑම ඩිජිටල් නිර්මාණයක් උසස්ම ප්‍රමිතියෙන්.</p>
+        </a>
+        <a href="https://wa.me/94762167260?text=I%20am%20interested%20in%20Facebook%20and%20Google%20My%20Business" target="_blank" class="blog-card" data-aos="zoom-in" data-aos-delay="300" style="text-decoration:none; display:block;">
+          <i class="fas fa-tasks fa-3x" style="color:#2563eb; margin-bottom: 1.5rem;"></i>
+          <h3>Facebook & Google My Business</h3>
+          <p>ඔයාගේ පිටු වෘත්තීමය ලෙස පවත්වාගෙන යාම සහ ගනුදෙනුකරුවන් කළමනාකරණය.</p>
+        </a>
+        <a href="https://wa.me/94762167260?text=I%20am%20interested%20in%20SEO%20Optimization" target="_blank" class="blog-card" data-aos="zoom-in" data-aos-delay="400" style="text-decoration:none; display:block;">
+          <i class="fas fa-search-dollar fa-3x" style="color:#10b981; margin-bottom: 1.5rem;"></i>
+          <h3>SEO Optimization</h3>
+          <p>ගූගල් සර්ච් වල ඔයාගේ වෙබ් අඩවිය උඩටම ගෙන ඒමේ සේවාව.</p>
+        </a>
+        <a href="https://wa.me/94762167260?text=I%20am%20interested%20in%203D%20Ads%20and%20Video" target="_blank" class="blog-card" data-aos="zoom-in" data-aos-delay="500" style="text-decoration:none; display:block;">
+          <i class="fas fa-video fa-3x" style="color:#ef4444; margin-bottom: 1.5rem;"></i>
+          <h3>3D Ads & Video</h3>
+          <p>මිනිසුන්ගේ අවධානය දිනාගන්නා 3D Video දැන්වීම් සහ නිර්මාණ.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" style="background: var(--dark-lighter);">
+    <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-up">අපි කරපු <span class="gradient-text">වැඩ (Previous Works)</span></h2>
+      <p style="color: var(--text-secondary); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;" data-aos="fade-up">විශ්වාසයෙන් වැඩ කරන්න කවුද කියලා බලාගන්න. මීට කලින් අපි කරපු නිර්මාණ සහ ප්‍රතිඵල මෙන්න.</p>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="img/verona.png" alt="Verona Elite Partners Logo Design" decoding="async">
+          <div class="portfolio-info">
+            <h3>Verona Elite Partners</h3>
+            <p>Premium 3D Wall Branding & Logo Design</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+          <img src="img/victoria.png" alt="Studio Hair Beauty Vittoria Branding" decoding="async">
+          <div class="portfolio-info">
+            <h3>Studio Hair Beauty Vittoria</h3>
+            <p>High-end Business Card & Visual Identity</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
+          <img src="img/viavai.png" alt="ViaVai Italian Restaurant Branding" decoding="async">
+          <div class="portfolio-info">
+            <h3>ViaVai Italian Brand</h3>
+            <p>3D Identity for Italian Delicacy Brand</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="400">
+          <img src="img/rathnayaka.png" alt="MS Rathnayaka Catering Branding" decoding="async">
+          <div class="portfolio-info">
+            <h3>MS Rathnayaka</h3>
+            <p>Traditional yet Modern Chef Branding (Since 1998)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="stats">
+    <div class="container stats-inner">
+      <div class="stat-item" data-aos="fade-up">
+        <span class="stat-num">150+</span>
+        <span class="stat-label">Happy Clients</span>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <span class="stat-num">5X</span>
+        <span class="stat-label">Average ROI</span>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <span class="stat-num">1000+</span>
+        <span class="stat-label">Projects Done</span>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <span class="stat-num">24/7</span>
+        <span class="stat-label">Support</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Active Active Content Section (Blog/Videos) -->
+  <section id="active" class="active-section">
+    <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-up">සතිපතා <span style="color:var(--primary)">මාර්කටිං Updates</span></h2>
+      <p style="color: var(--text-secondary); margin-bottom: 3rem;" data-aos="fade-up">අපි ඔයාව දැනුවත් කරනවා. අලුත්ම ටිප්ස් සහ වීඩියෝ බලන්න.</p>
+      
+      <div class="blog-grid">
+        <div class="blog-card" data-aos="flip-left">
+          <i class="fas fa-chart-line fa-3x" style="color:var(--primary); margin-bottom: 1.5rem;"></i>
+          <h3>SEO එකෙන් බිස්නස් එක උඩට ගන්න විදිහ</h3>
+          <p>ඔයාගේ වෙබ් අඩවිය ගූගල් සර්ච් වල උඩටම ගේන්න පුළුවන් සරල ටිප්ස් කිහිපයක් මෙන්න.</p>
+          <a href="blog/seo-tips.html" style="color:var(--primary); font-weight:700; text-decoration:none; margin-top:1rem; display:block;">කියවන්න →</a>
+        </div>
+        <div class="blog-card" data-aos="flip-left" data-aos-delay="100">
+          <i class="fab fa-facebook-f fa-3x" style="color:#1877F2; margin-bottom: 1.5rem;"></i>
+          <h3>FB Ads වල ප්‍රතිඵල වැඩි කරගන්න</h3>
+          <p>අඩු වියදමකින් වැඩිම කස්ටමර්ස් ප්‍රමාණයක් හොයාගන්නේ කොහොමද? වීඩියෝව බලන්න.</p>
+          <a href="blog/fb-ads-tips.html" style="color:var(--primary); font-weight:700; text-decoration:none; margin-top:1rem; display:block;">බලන්න →</a>
+        </div>
+        <div class="blog-card" data-aos="flip-left" data-aos-delay="200">
+          <i class="fas fa-lightbulb fa-3x" style="color:#FFD700; margin-bottom: 1.5rem;"></i>
+          <h3>2024 අලුත්ම Marketing Trends </h3>
+          <p>ලෝකයත් එක්ක ඉස්සරහට යන්න ඔයාගේ බිස්නස් එක වෙනස් කරන්න ඕනේ කොහොමද?</p>
+          <a href="blog/marketing-trends-2024.html" style="color:var(--primary); font-weight:700; text-decoration:none; margin-top:1rem; display:block;">කියවන්න →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" style="padding: 80px 0; background: rgba(255, 255, 255, 0.02);">
+    <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-up">අපේ සේවාව ගැන <span class="gradient-text">අය කියන දේ</span></h2>
+      <div class="reviews-grid">
+        <div class="review-card" data-aos="fade-up">
+          <i class="fas fa-quote-left quote"></i>
+          <p>අපේ Business එකට Facebook Page එක හරහා Customersලා ගොඩක් ගෙන්නලා දෙන්න Digis එක ලොකු සහයෝගයක් දුන්නා. හරිම විශ්වාසවන්ත සේවාවක්.</p>
+          <div class="client-info">
+            <div class="client-img">K</div>
+            <div class="client-detail">
+              <h4>Kasun Perera</h4>
+              <p>Business Owner</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-quote-left quote"></i>
+          <p>වෙබ් අඩවියක් හදාගන්න මම හුඟක් තැන් වලට කතා කරා. හැබැයි මට ඕන විදිහටම ලස්සනට සහ වේගවත් වෙබ් අඩවියක් කරලා දුන්නේ Digis එකෙන් විතරයි.</p>
+          <div class="client-info">
+            <div class="client-img">A</div>
+            <div class="client-detail">
+              <h4>Anura Silva</h4>
+              <p>Managing Director</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-quote-left quote"></i>
+          <p>අපේ brand එකට Graphic designing කරලා දුන්න විදිහ හරිම professional. අලුත් idea වලට හැඩ ගැසුණු කණ්ඩායමක්. ජය වේවා!</p>
+          <div class="client-info">
+            <div class="client-img">D</div>
+            <div class="client-detail">
+              <h4>Dilini Gamage</h4>
+              <p>Founder, Fashion Store</p>
+            </div>
+          </div>
+        </div>
+        <div class="review-card add-review-card" data-aos="fade-up" data-aos-delay="300" onclick="openReviewModal()">
+          <div class="add-review-content">
+            <i class="fas fa-plus-circle" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+            <h4 style="color: #fff;">ඔබේ අදහසත් මෙතැනට එක් කරන්න</h4>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">අපේ සේවාව ගැන ඔබේ අදහස දක්වන්න</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review Modal -->
+  <div id="reviewModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeReviewModal()">&times;</span>
+      <h3 style="margin-bottom: 20px; color: var(--primary);">ඔබේ අදහස (Add Your Review)</h3>
+      <form id="reviewForm">
+        <div class="form-group">
+          <label>නම (Name)</label>
+          <input type="text" class="form-control" required placeholder="ඔබේ නම">
+        </div>
+        <div class="form-group">
+          <label>වෘත්තිය (Profession)</label>
+          <input type="text" class="form-control" placeholder="ඔබේ රැකියාව හෝ ව්‍යාපාරය">
+        </div>
+        <div class="form-group">
+          <label>අදහස (Review Message)</label>
+          <textarea class="form-control" required placeholder="අපේ සේවාව ගැන ඔබේ අදහස ලියන්න"></textarea>
+        </div>
+        <button type="submit" class="btn btn-call" style="width: 100%;">අදහස ඉදිරිපත් කරන්න (Submit)</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Grand CTA Banner -->
+  <section id="contact" style="padding-top: 20px;">
+    <div class="container">
+      <div class="cta-banner" data-aos="zoom-in">
+        <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">දැන්ම <span style="background: linear-gradient(90deg, #ff7e5f, #feb47b); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">ඔයාගේ බිස්නස් එක</span> දියුණු කරන්න පටන් ගන්න.</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2.5rem; color: var(--text-secondary);">අපි ඔයාව අංක එක කරන්න සූදානම්. කතා කරන්න අදම.</p>
+        
+        <div class="contact-form-container" data-aos="fade-up">
+          <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; text-align: center;">අපිට පණිවිඩයක් එවන්න</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label>ඔබේ නම (Your Name)</label>
+              <input type="text" class="form-control" placeholder="ඔබේ නම ඇතුළත් කරන්න" required>
+            </div>
+            <div class="form-group">
+              <label>දුරකථන අංකය (Phone Number)</label>
+              <input type="tel" class="form-control" placeholder="ඔබේ අංකය ඇතුළත් කරන්න" required>
+            </div>
+            <div class="form-group">
+              <label>පණිවිඩය (Your Message)</label>
+              <textarea class="form-control" placeholder="ඔයාට දැනගන්න ඕනේ දේ මෙතන ලියන්න"></textarea>
+            </div>
+            <button type="submit" class="btn btn-call" style="width: 100%; font-size: 1.1rem; padding: 1.2rem;">Send Message (ඊමේල් කරන්න)</button>
+          </form>
+        </div>
+
+        <div class="cta-group" style="justify-content: center; margin-top: 3rem;">
+          <a href="https://wa.me/94762167260" class="btn btn-whatsapp" style="padding: 1.2rem 3rem; font-size: 1.1rem;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+          <a href="tel:+393793066450" class="btn btn-call" style="padding: 1.2rem 3rem; font-size: 1.1rem;"><i class="fas fa-phone"></i> Call Now</a>
+        </div>
+        
+        <div style="margin-top: 3rem; color: #888; font-size: 0.9rem;">
+          <p><i class="fas fa-map-marker-alt"></i> via insurrasione 11, agordo, be, italia</p>
+          <p><i class="fas fa-envelope"></i> digisdigital@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section id="map" style="padding-top: 40px; background: #050505;">
+    <div class="container-fluid" style="padding: 0;">
+      <iframe 
+        title="Digis Marketing Italy Location Map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.2662095874283!2d12.0315!3d46.2825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47783226a3a4b9c1%3A0x1c1c1c1c1c1c1c!2sVia%20Insurrezione%2C%2011%2C%2032021%20Agordo%20BL%2C%20Italy!5e0!3m2!1sen!2sit!4v1711180000000!5m2!1sen!2sit" 
+        width="100%" height="450" style="border:0; filter: grayscale(100%) invert(90%) contrast(1.2) opacity(0.8);" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" data-aos="fade-up">
+          <img src="img/logo.png" alt="Digis Marketing Footer Logo" width="180" height="50" loading="lazy" style="margin-bottom: 1.5rem; width: auto; height: 50px; object-fit: contain;">
+          <p>අපි ඔයාගේ බිස්නස් එකත් එක්ක වැඩ කරලා ඔයාව දිනවන ඩිජිටල් සහකරු. Digis Marketing.</p>
+          <div style="display:flex; gap:1.2rem; margin-top:1.5rem;">
+            <a href="https://www.facebook.com/digis.lk" target="_blank" style="font-size: 1.5rem; color: var(--text-secondary); transition: all 0.3s;" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/digis.lk/?hl=en" target="_blank" style="font-size: 1.5rem; color: var(--text-secondary); transition: all 0.3s;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/suneth-anurudda-a5b424377/" target="_blank" style="font-size: 1.5rem; color: var(--text-secondary); transition: all 0.3s;" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@digis.lk" target="_blank" style="font-size: 1.5rem; color: var(--text-secondary); transition: all 0.3s;" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+          <h4>Services</h4>
+          <a href="#">Social Media Marketing</a>
+          <a href="#">Search Engine Optimization (SEO)</a>
+          <a href="#">Website Design & Development</a>
+          <a href="#">Graphic Design & Branding</a>
+          <a href="#">Facebook & Google My Business</a>
+          <a href="#">3D Animation & Video Ads</a>
+        </div>
+        <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#portfolio">Our Portfolio</a>
+          <a href="#active">Active Blog</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+          <h4>Contact & Location</h4>
+          <p><strong>Italy:</strong> +39 379 306 6450</p>
+          <p><strong>Sri Lanka:</strong> +94 76 216 7260</p>
+          <p><strong>Email:</strong> digisdigital@gmail.com</p>
+          <p><strong>Address:</strong> via insurrasione 11, agordo, be, italia</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Digis Marketing (Pvt) Ltd. All Rights Reserved. Engineered with ❤️ for Clients.</p>
+        <p style="margin-top: 5px; color: #555;">Design by Premium Agency Tech</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <div class="back-to-top" id="backToTop" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // Initialize Animations
+    AOS.init({
+      duration: 1200,
+      once: false,
+    });
+
+    // Preloader Logic
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => loader.style.display = 'none', 500);
+      }, 1000);
+    });
+
+    // Navbar Scroll Effect & Progress
+    const scrollProgress = document.getElementById('scrollProgress');
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      
+      // Update Progress Bar
+      if (scrollProgress) scrollProgress.style.width = scrolled + "%";
+      
+      // Navbar Active State
+      if (window.scrollY > 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      
+      // Back to Top Button
+      if (window.scrollY > 500) {
+        backToTop.classList.add('active');
+      } else {
+        backToTop.classList.remove('active');
+      }
+    });
+
+    // Mobile Menu Logic
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (mobileToggle) {
+      mobileToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const icon = mobileToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+      });
+    }
+
+    // Close mobile menu on click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        const icon = mobileToggle.querySelector('i');
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-times');
+      });
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Particles JS
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let particles = [];
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 1;
+        this.speedX = Math.random() * 0.5 - 0.25;
+        this.speedY = Math.random() * 0.5 - 0.25;
+        this.opacity = Math.random() * 0.5;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x > canvas.width) this.x = 0;
+        if (this.x < 0) this.x = canvas.width;
+        if (this.y > canvas.height) this.y = 0;
+        if (this.y < 0) this.y = canvas.height;
+      }
+      draw() {
+        ctx.fillStyle = `rgba(192, 25, 45, ${this.opacity})`;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function init() {
+      particles = [];
+      for (let i = 0; i < 50; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animate);
+    }
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      init();
+    });
+
+    init();
+    animate();
+
+    // Modal & Form Logic
+    const modal = document.getElementById("reviewModal");
+    function openReviewModal() { if(modal) modal.style.display = "block"; }
+    function closeReviewModal() { if(modal) modal.style.display = "none"; }
+    window.onclick = function(event) { if (event.target == modal) { closeReviewModal(); } }
+
+    // Form Submission Logic (Personalized & Business Professional Messages)
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = e.target.querySelector('input[type="text"]').value;
+        const phone = e.target.querySelector('input[type="tel"]').value;
+        const message = e.target.querySelector('textarea').value;
+        
+        const whatsappMsg = `*New Business Inquiry*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Message:* ${message}`;
+        window.open(`https://wa.me/94762167260?text=${whatsappMsg}`, '_blank');
+        e.target.reset();
+      });
+    }
+
+    const reviewForm = document.getElementById('reviewForm');
+    if (reviewForm) {
+      reviewForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = e.target.querySelectorAll('input')[0].value;
+        alert(`බොහොම ස්තූතියි ${name}! අපේ සේවාව පිළිබඳ ඔබේ වටිනා අදහස අපට ඉතා වැදගත්. පරීක්ෂා කිරීමෙන් පසුව එය වෙබ් අඩවියේ පල කිරීමට අපි කටයුතු කරන්නම්.`);
+        closeReviewModal();
+        e.target.reset();
+      });
+    }
+
+    // Performance LCP tracking
+    const observer = new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        console.log('LCP:', entry.startTime, entry.url);
+      }
+    });
+    observer.observe({type: 'largest-contentful-paint', buffered: true});
+  </script>
+</body>
+</html>
